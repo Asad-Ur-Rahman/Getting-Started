@@ -31,4 +31,4 @@ jobs:
         run: npm install -g surge
         
       - name: Run surge 
-        run: ./ waggish-end.surge.sh --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./ waggish-end.surge.sh --token ${{secrets.SURGE_TOKEN}}
